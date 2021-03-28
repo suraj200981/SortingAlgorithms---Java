@@ -21,7 +21,7 @@ public class bubbleSort {
         int temp1;
         int temp2;
         int[] newInputArr = new int[5];
-        for(int j=0; j<4;j++) { //number of compares is 4
+        for(int j=0; j<4;j++) { //number of compares is array size -1
             for (int x = 0; x < arrInput.length - 1; x++) {
 
                 if (arrInput[x] > arrInput[x + 1]) {
