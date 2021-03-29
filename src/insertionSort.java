@@ -22,7 +22,7 @@ public class insertionSort {
         for (int x = 0; x < arr.length - 1; x++) {//8
                 current = arr[x];//8
 
-            for(int j =x+1; j<arr.length-1; j++) {//2
+            for(int j =x+1; j<arr.length; j++) {//2
 
                 if(current>arr[j]){
                     temp1 = arr[j];
