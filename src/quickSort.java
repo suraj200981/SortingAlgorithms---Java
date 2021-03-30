@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Collections;
 
 public class quickSort {
     public static void main(String[] args) {
@@ -41,10 +42,41 @@ public class quickSort {
             }
 
         }
+        int temp1;
+        int temp2;
 
 
+            for (int x = arr[arr.length-1]; x>=0; x--) {
+                int indexOfPivot = getArrayIndex(arr,3);
+
+
+                if (arr[x] >pivot) {
+
+                    temp1 = arr[indexOfPivot];//3
+                    temp2 = arr[x];//8
+
+                    arr[x] = temp1;// 3
+                    arr[indexOfPivot] = temp2;//8
+
+                }
+            }
         System.out.println(Arrays.toString(arr));
+
+    }
+    public static int getArrayIndex(int[] arr, int value) {
+
+        int k=0;
+        for(int i=0;i<arr.length;i++){
+
+            if(arr[i]==value){
+                k=i;
+                break;
+            }
+        }
+        return k;
+    }
+
 
 
     }
-}
+
