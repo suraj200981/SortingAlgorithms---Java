@@ -17,10 +17,17 @@ public class heapSort {
     }
 
     public static void heapSortAlg(int[] arr) {
+        int[] sortedArr = new int[arr.length];
+        int[] maxHeapArr = new int[arr.length];
+        int temp;
 
         System.out.println("build max heap:");
-        System.out.println(Arrays.toString(buildMaxHeap(arr)));
-
+        System.out.println(Arrays.toString(buildMaxHeap(arr)));// now we have max heap we need to swap largest with smallest
+        maxHeapArr = buildMaxHeap(arr);
+        temp = maxHeapArr[0];//9
+        maxHeapArr[0] = maxHeapArr[maxHeapArr.length - 1];//1
+        maxHeapArr[maxHeapArr.length-1]= temp;
+        System.out.println(Arrays.toString(maxHeapArr));// now we have max heap we need to swap largest with smallest
 
     }
 
