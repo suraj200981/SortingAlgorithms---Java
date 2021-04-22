@@ -29,6 +29,8 @@ public class heapSort {
         maxHeapArr[maxHeapArr.length-1]= temp;
         System.out.println(Arrays.toString(maxHeapArr));// now we have max heap we need to swap largest with smallest
 
+
+
     }
 
     public static int[] buildMaxHeap(int[] arrMaxHeap) {
